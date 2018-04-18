@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Robot" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon"  href="http://www.campusaceimar.info/colegiomarcote/acceso.web.es/content/980182/biblioteca.png">
+
+    <title>Colegio Jesus de Nazareth</title>
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body{
+          background: url(http://www.dibujoswiki.com/Uploads/dibujoswiki.com/ImagenesGrandes/paisaje-primaveral-8.jpg);
+          background-repeat: repeat;
+        }
+       .container-form
+        {
+          display:flex;
+          justify-content: center;
+        }
+
+        .container-form form {
+          height: 600px;
+          width: 500px;
+          margin-top: 30px;
+          padding: 1px;
+          background: rgb(77, 143, 200,.6);
+          border: 3px solid #342929;
+          color: white;
+
+          /*FLEXBOX*/
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+        }
+        h3 {text-align: center }
+
+        .boton{
+          text-decoration: none;
+          text-align: center;
+          padding: 4px;
+          width: 150px;
+          font-weight: 500;
+          font-size: 20px;
+          color: #ffffff;
+          background-color: #1883ba;
+          border-radius: 6px;
+          border: 2px solid #0016b0;
+        }
+        .boton:hover
+        {
+          color: #rgb(4, 4, 4);
+          color: #1883ba;
+          background-color: #ffffff;
+        }
+
+        .componentes {
+          width: 100%;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+
+        .componentes .field {
+          padding: 5px;
+          width:50%;
+          border-radius: 5px;
+          direction: none;
+        }
+
+
+
+
+    </style>
+
+  </head>
+  <body>
+
+
+    <div class="container-form">
+      <form class="" action="index.html" method="post">
+
+          <h2>Colegio Jesus de Nazareth </h2>
+          <div class="componentes">
+              <label for="Nombre_Registro">Ingresar Nombre</label>
+              <input type="text" id="Nombre_Registro" placeholder="Ingresar Nombre" class="field">
+
+          </div>
+
+          <div class="componentes">
+              <label for="Apellido_Registro">Ingresar Apellido</label>
+              <input type="text" id="Apellido_Registro" placeholder="Ingresar Apellido" class="field">
+
+          </div>
+          <div class="componentes">
+            <label for="Dni">Ingresar DNI</label>
+            <input type="text" id="DNI_Registro" placeholder="Ingresar DNI" class="field">
+          </div>
+
+          <div class="componentes">
+            <h3>Elegir sexo</h3>
+            <input type="radio" name="genero" value="masculino" checked>  <span>Masculino</span>
+            <input type="radio" name="genero" value="femenino"> <span>Femenino</span>
+          </div>
+
+          <div class="componentes">
+            <label for="grado">Ingresar grado</label>
+            <select id="grado" class="ComboBox">
+              <option value="Estimulación Temprana">Estimulación Temprana</option>
+              <option value="3 años">Tres años</option>
+              <option value="4 años">Cuatro años</option>
+              <option value="5 años">Cinco años</option>
+
+            </select>
+          </div>
+
+            <br>
+          <div class="componentes">
+            <label for="año">Seleccionar Año de nacimiento</label>
+            <select id="Año" class="ComboBox">
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+            </select>
+          </div>
+
+            <br>
+          <div class="componentes">
+            <input type="hidden"  name="MAX_FILE_SIZE" value="100" >
+            <input name="file" id:"" type="file" >
+            <input type="submit" class="boton" value="Subir archivo" >
+          </div>
+          <input type="button" class="boton" id="Matricular" value="Registrar">
+          <img src="http://colegiolaalmunia.esy.es/wp-content/uploads/2017/05/colegio.png" alt="" title="" width="200" height="200">
+      </form>
+    </div>
+
+  </body>
+</html>
